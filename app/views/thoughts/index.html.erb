@@ -6,18 +6,18 @@
 <h3>Wanna leave me some feedback?</h3>
 <%= link_to 'Click Here!', new_thought_path, class: 'btn btn-lg btn-primary'%>
 
+<% if @thoughts.present? %>
+  <div class="row">
+    <% @thoughts.each do |thought| %>
+      
+      <div class="col-6 reviews">
+      <h1><%= thought.input %></h1>
+      <h2>- <%= thought.reviewer %></h2>
+    </div>
+    <% end %>
 
-<div class="row">
-  <% @thoughts.each do |thought| %>
-    
-    <div class="col-6 reviews">
-    <h1><%= thought.input %></h1>
-    <h2>- <%= thought.reviewer %></h2>
   </div>
-  <% end %>
-
-</div>
-
+<% end %>
 
 
 

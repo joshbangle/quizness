@@ -10,6 +10,15 @@
   </head>
 
   <body>
+<!-- As a link -->
+<nav class="navbar navbar-light bg-light">
+  <%= link_to root_path, class: 'navbar-brand float-left' do %>
+  <span>Quizness</span>
+  <% end %>
+</nav>
+
+
+
     <%= yield %>
   </body>
 </html>
