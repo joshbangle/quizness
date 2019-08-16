@@ -1,0 +1,24 @@
+<div class="container text-center">
+  <h2>So, you wanna see what I can do, huh? Dont <strong class='incolor'>TRUST</strong> me huh??</h2>
+  <h1>Well <strong class="incolor">HERE IT IS, MY OWN WEB PAGE, AND IN COLOR TOO!!!</strong> I even changed the font up a bit for ya.</h1>
+  <h2>Time to see what you <strong class="incolor">REALLY</strong> think of my "DIY" app.</h2>
+<br />
+<h3>Wanna leave me some feedback?</h3>
+<%= link_to 'Click Here!', new_thought_path, class: 'btn btn-lg btn-primary'%>
+
+
+<div class="row">
+  <% @thoughts.each do |thought| %>
+    
+    <div class="col-6 reviews">
+    <h1><%= thought.input %></h1>
+    <h2>- <%= thought.reviewer %></h2>
+  </div>
+  <% end %>
+
+</div>
+
+
+
+
+</div>
