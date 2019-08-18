@@ -1,6 +1,7 @@
-<div class="container new-box"
-<%= simple_form_for @thought do |f| %>
+<div class="container new-box">
+<%= simple_form_for Thought.new do |f| %>
   <%= f.input :input %>
   <%= f.input :reviewer %>
   <%= f.submit 'Hit me' %>
 <% end %>
+</div>

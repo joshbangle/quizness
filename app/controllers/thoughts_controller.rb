@@ -25,3 +25,4 @@ def thought_params
 end
 
 end
+ 
