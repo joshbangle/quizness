@@ -1,7 +1,7 @@
 <div class="container new-box">
 <%= simple_form_for Thought.new do |f| %>
-  <%= f.input :input %>
+  <%= f.input :input, label: "Let me know what you think!" %>
   <%= f.input :reviewer %>
-  <%= f.submit 'Hit me' %>
+  <%= f.submit 'Hit me', class: "btn btn-lg btn-primary float-right" %>
 <% end %>
 </div>
